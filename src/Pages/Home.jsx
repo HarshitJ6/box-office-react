@@ -12,7 +12,7 @@ const Home = () => {
 
   function handleRadioChange(ev) {
     setSearchOption(ev.target.value);
-    console.log(ev.target.value);
+    // console.log(ev.target.value);
   }
 
   function handleInputChange(ev) {

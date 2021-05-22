@@ -11,7 +11,7 @@ const ShowCard = ({ id, image, name, summary }) => {
 
   return (
     <ProSearchCard>
-      <div class="img-wrapper">
+      <div className="img-wrapper">
         <img src={image} alt="show" />
       </div>
 
