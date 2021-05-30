@@ -1,32 +1,35 @@
 import React from "react";
+import { SeasonList, SeasonsWrapper } from "./Seasons.styled";
 
 const Seasons = ({ seasons }) => {
   return (
-    <div>
+    <SeasonsWrapper>
       <p>
         Seasons in total: <span>{seasons.length}</span>
       </p>
       <p>
         Episodes in total:
-        <span>{seasons.reduce((acc, season) => acc + season.number, 0)}</span>
+        <span>
+          {seasons.reduce((acc, season) => acc + season.episodeOrder, 0)}
+        </span>
       </p>
-      <div>
+      {/* <SeasonList>
         {seasons.map((season) => (
-          <div key={season.id}>
-            <div>
+          <div key={season.id} className="season-item">
+            <div className="left">
               <p>Season {season.season}</p>
               <p>
                 Episodes: <span>{season.number}</span>
               </p>
             </div>
-            <div>
+            <div className="right">
               Aired:
               <span>{season.airdate}</span>
             </div>
           </div>
         ))}
-      </div>
-    </div>
+      </SeasonList> */}
+    </SeasonsWrapper>
   );
 };
 

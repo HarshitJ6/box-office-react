@@ -3,9 +3,10 @@ import ActorGrid from "../Components/actor/ActorGrid";
 import HomePageLayout from "../Components/HomePageLayout";
 import ShowGrid from "../Components/show/ShowGrid";
 import { apiGet } from "../misc/config";
+import { useLastQuery } from "../misc/customHook";
 
 const Home = () => {
-  const [input, setInput] = React.useState("");
+  const [input, setInput] = useLastQuery();
   const [results, setResults] = React.useState(null);
   const [searchOption, setSearchOption] = React.useState("shows");
   const isShows = searchOption === "shows";
