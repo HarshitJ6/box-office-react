@@ -1,5 +1,5 @@
 import React from "react";
-import { SeasonList, SeasonsWrapper } from "./Seasons.styled";
+import { SeasonsWrapper } from "./Seasons.styled";
 
 const Seasons = ({ seasons }) => {
   return (
