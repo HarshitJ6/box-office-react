@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/box-office-react/static/js/main.5eb86aad.chunk.js",
+    "main.js.map": "/box-office-react/static/js/main.5eb86aad.chunk.js.map",
+    "runtime-main.js": "/box-office-react/static/js/runtime-main.dc2090b7.js",
+    "runtime-main.js.map": "/box-office-react/static/js/runtime-main.dc2090b7.js.map",
+    "static/js/2.d84c518a.chunk.js": "/box-office-react/static/js/2.d84c518a.chunk.js",
+    "static/js/2.d84c518a.chunk.js.map": "/box-office-react/static/js/2.d84c518a.chunk.js.map",
+    "index.html": "/box-office-react/index.html",
+    "static/js/2.d84c518a.chunk.js.LICENSE.txt": "/box-office-react/static/js/2.d84c518a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dc2090b7.js",
+    "static/js/2.d84c518a.chunk.js",
+    "static/js/main.5eb86aad.chunk.js"
+  ]
+}
