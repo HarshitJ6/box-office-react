@@ -15,15 +15,16 @@ const Home = () => {
   const [input, setInput] = useLastQuery();
   const [results, setResults] = React.useState(null);
   const [searchOption, setSearchOption] = React.useState("shows");
-  const isShows = searchOption === "shows";
+  let isShows = searchOption === "shows";
 
   function handleRadioChange(ev) {
     setSearchOption(ev.target.value);
-    // console.log(ev.target.value);
+    console.log(ev.target.value + " " + isShows);
   }
 
   function handleInputChange(ev) {
     setInput(ev.target.value);
+    // console.log(ev.target.value);
   }
 
   function handleSearch() {
@@ -51,6 +52,7 @@ const Home = () => {
     <HomePageLayout>
       <SearchInput
         type="text"
+        id="shows-search"
         onChange={handleInputChange}
         onKeyDown={onKeyDown}
         value={input}
@@ -60,21 +62,35 @@ const Home = () => {
       <RadioInputsWrapper>
         <div>
           <CustomRadio
+            id="show-search"
+            label="Shows"
+            checked={isShows}
+            onChange={handleRadioChange}
+            value="shows"
+          />
+          {/* <CustomRadio
             label="Shows"
             id="actors-search"
-            value="people"
+            value="shows"
             onChange={handleRadioChange}
             checked={isShows}
-          />
+          /> */}
         </div>
         <div>
           <CustomRadio
+            id="actors-search"
+            label="Actors"
+            checked={!isShows}
+            onChange={handleRadioChange}
+            value="people"
+          />
+          {/* <CustomRadio
             label="Actors"
             id="actors-search"
             value="people"
             onChange={handleRadioChange}
             checked={!isShows}
-          />
+          /> */}
         </div>
       </RadioInputsWrapper>
       <SearchButtonWrapper>
